@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 50 filmova - MaxViem Paket</title>
+<link rel="stylesheet" href="style.css">
+<script src="particles.min.js"></script>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">MaxViem Paket</div>
+<div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+<ul id="menu">
+<li><a href="index.html">Početna</a></li>
+<li><a href="nasaaplikacija.html">Naša aplikacija</a></li>
+<li><a href="top50.html" class="active">Top 50</a></li>
+<li><a href="privacy.html">Privatnost</a></li>
+<li><a href="https://wa.me/381694007480" target="_blank">Kontakt</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero small">
+<div id="particles-js"></div>
+<div class="hero-content">
+<h1>Top 50 filmova</h1>
+<p>Najbolji filmovi koje možete gledati preko MaxViem paketa.</p>
+</div>
+</section>
+
+<section class="top50">
+<h2>Top 50 filmova</h2>
+<div class="top50-container">
+<!-- Primer 50 filmova, placeholder slike -->
+<div class="top50-card"><img src="https://via.placeholder.com/180x270.png?text=Inception" alt="Inception"><p>Inception (2010)</p></div>
+<div class="top50-card"><img src="https://via.placeholder.com/180x270.png?text=The+Matrix" alt="The Matrix"><p>The Matrix (1999)</p></div>
+<div class="top50-card"><img src="https://via.placeholder.com/180x270.png?text=Interstellar" alt="Interstellar"><p>Interstellar (2014)</p></div>
+<div class="top50-card"><img src="https://via.placeholder.com/180x270.png?text=Gladiator" alt="Gladiator"><p>Gladiator (2000)</p></div>
+<div class="top50-card"><img src="https://via.placeholder.com/180x270.png?text=Fight+Club" alt="Fight Club"><p>Fight Club (1999)</p></div>
+<div class="top50-card"><img src="https://via.placeholder.com/180x270.png?text=The+Dark+Knight" alt="The Dark Knight"><p>The Dark Knight (2008)</p></div>
+<!-- Nastavi do 50 filmova (placeholderi mogu biti random nazivi) -->
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 MaxViem Paket. Sva prava zadržana.</p>
+<p><a href="privacy.html" style="color:#fff;">Politika privatnosti</a></p>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('menu').classList.toggle('show');}
+particlesJS.load('particles-js', 'particles.json', function(){console.log('particles.js učitan');});
+</script>
+</body>
+</html>
