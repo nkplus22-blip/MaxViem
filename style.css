@@ -161,6 +161,27 @@ header nav ul li a.active {
   margin: 10px 0;
 }
 
+/* Plaćanje */
+.payment {
+  padding: 50px;
+  text-align: center;
+}
+
+.payment ul {
+  list-style: none;
+  padding: 0;
+}
+
+.payment li {
+  margin: 5px 0;
+}
+
+/* Kontakt */
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
 /* Footer */
 footer {
   background-color: #c00;
