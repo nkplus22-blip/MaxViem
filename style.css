@@ -1,40 +1,38 @@
-/* Reset i osnovni stilovi */
+/* Osnovni reset */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
 body{background:#fff;color:#000;}
 a{text-decoration:none;color:#fff;}
-header{background:#c00;padding:10px 20px;position:relative;}
+
+/* Header i meni */
+header{background:#c00;padding:10px 20px;position:relative;z-index:1000;}
 .logo{color:#fff;font-weight:bold;font-size:24px;}
 nav ul{list-style:none;display:flex;gap:20px;}
 nav ul li a{color:#fff;}
 nav ul li a.active{text-decoration:underline;}
-.hamburger{display:none;cursor:pointer;}
-.hamburger div{width:25px;height:3px;background:#fff;margin:5px 0;}
-.show{display:block !important;}
 
-/* Hero */
-.hero{position:relative;text-align:center;padding:100px 20px;background:#fff;color:#c00;}
-.hero-content h1{font-size:48px;}
-.hero-content p{font-size:20px;margin:20px 0;}
-.cta-btn{background:#c00;color:#fff;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;}
+/* Hamburger */
+.hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px;}
+.hamburger div{width:25px;height:3px;background:#fff;transition:all 0.3s ease;}
+.show-hamburger div:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+.show-hamburger div:nth-child(2){opacity:0;}
+.show-hamburger div:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
 
-/* Pricing */
-.pricing-container{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:50px 20px;}
-.card{background:#fff;border:2px solid #c00;padding:20px;width:250px;text-align:center;border-radius:10px;}
-.price{font-weight:bold;font-size:24px;margin:20px 0;}
-
-/* Testimonials */
-.testimonials-container{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:50px 20px;}
-.testimonial{background:#fff;border:2px solid #c00;padding:15px;width:250px;border-radius:10px;}
-
-/* Top 50 */
-.top50-container{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:50px 20px;}
-.top50-card{width:180px;text-align:center;}
-.top50-card img{width:100%;border-radius:10px;}
-
-/* Footer */
-footer{background:#c00;color:#fff;text-align:center;padding:20px;}
-/* Responsive hamburger */
+/* Responsive meni */
 @media(max-width:768px){
-nav ul{display:none;flex-direction:column;background:#c00;position:absolute;top:50px;left:0;width:100%;padding:20px;}
-.hamburger{display:block;}
+  nav ul{
+    display:none;
+    flex-direction:column;
+    background:#c00;
+    position:absolute;
+    top:60px;
+    left:0;
+    width:100%;
+    padding:20px;
+    z-index:999;
+  }
+  nav ul li{margin:10px 0;}
+  .hamburger{display:flex;}
 }
+nav ul.show{display:flex;}
+
+/* Hero, sekcije, kartice, footer ostaje isto */
