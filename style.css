@@ -1,0 +1,170 @@
+/* Opšti stilovi */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #c00;
+}
+
+/* Header */
+header {
+  background-color: #c00;
+  color: #fff;
+  padding: 15px 50px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #ffdddd;
+}
+
+.whatsapp-btn {
+  background-color: #ff3333;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Hero sekcija */
+.hero {
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero.small { height: 250px; }
+
+.hero-content h1 {
+  font-size: 40px;
+  z-index: 1;
+}
+
+.hero-content p {
+  font-size: 18px;
+  z-index: 1;
+}
+
+/* Particles pozadina */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Paketi */
+.pricing {
+  padding: 50px;
+  text-align: center;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing .card {
+  border: 2px solid #c00;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  color: #c00;
+}
+
+.pricing .card h3 {
+  margin-top: 0;
+}
+
+.pricing .card .price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* CTA dugmad */
+.cta-btn {
+  display: inline-block;
+  background-color: #c00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.cta-btn:hover {
+  background-color: #ff3333;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  border: 1px solid #c00;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  color: #c00;
+}
+
+/* App info */
+.app-info {
+  padding: 50px;
+  text-align: center;
+}
+
+.app-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.app-info li {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #c00;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
