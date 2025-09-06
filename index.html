@@ -1,111 +1,106 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MaxViem Paket</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.png" type="image/png">
-  <script src="particles.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MaxViem Paket</title>
+<link rel="stylesheet" href="style.css">
+<script src="particles.min.js"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <div class="logo">MaxViem Paket</div>
-      <ul>
-        <li><a href="index.html" class="active">Početna</a></li>
-        <li><a href="nasaaplikacija.html">Naša aplikacija</a></li>
-        <li><a href="privacy.html">Privatnost</a></li>
-        <li><a href="https://wa.me/381694007480" target="_blank" class="whatsapp-btn">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+<nav>
+  <div class="logo">MaxViem Paket</div>
+  <div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+  <ul id="menu">
+    <li><a href="index.html" class="active">Početna</a></li>
+    <li><a href="nasaaplikacija.html">Naša aplikacija</a></li>
+    <li><a href="top50.html">Top 50</a></li>
+    <li><a href="privacy.html">Privatnost</a></li>
+    <li><a href="https://wa.me/381694007480" target="_blank">Kontakt</a></li>
+  </ul>
+</nav>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div id="particles-js"></div>
-    <div class="hero-content">
-      <h1>Dobrodošli u MaxViem Paket</h1>
-      <p>Najbolji IPTV kanali – uvek tu za vas.</p>
-      <a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Poruči odmah</a>
-    </div>
-  </section>
+<section class="hero">
+<div id="particles-js"></div>
+<div class="hero-content">
+<h1>Dobrodošli u MaxViem Paket</h1>
+<p>Najbolji IPTV kanali – uvek tu za vas.</p>
+<a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Poruči odmah</a>
+</div>
+</section>
 
-  <!-- Paketi -->
-  <section class="pricing">
-    <h2>Naši paketi</h2>
-    <div class="pricing-container">
-      <div class="card">
-        <h3>Basic</h3>
-        <p>Osnovni paket sa najvažnijim kanalima.</p>
-        <p class="price">10€ / mesec</p>
-        <a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Naruči</a>
-      </div>
-      <div class="card">
-        <h3>Medium</h3>
-        <p>Sve iz Basic paketa + dodatni sportski i filmski kanali.</p>
-        <p class="price">15€ / mesec</p>
-        <a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Naruči</a>
-      </div>
-      <div class="card">
-        <h3>Pro</h3>
-        <p>Kompletan sadržaj sa preko 500+ kanala i VOD opcijom.</p>
-        <p class="price">20€ / mesec</p>
-        <a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Naruči</a>
-      </div>
-    </div>
-  </section>
+<section class="pricing">
+<h2>Naši paketi</h2>
+<div class="pricing-container">
+<div class="card">
+<h3>Basic</h3>
+<p>Osnovni paket sa najvažnijim kanalima.</p>
+<p class="price">10€ / mesec</p>
+<a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Naruči</a>
+</div>
+<div class="card">
+<h3>Medium</h3>
+<p>Sve iz Basic paketa + dodatni sportski i filmski kanali.</p>
+<p class="price">15€ / mesec</p>
+<a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Naruči</a>
+</div>
+<div class="card">
+<h3>Pro</h3>
+<p>Kompletan sadržaj sa preko 500+ kanala i VOD opcijom.</p>
+<p class="price">20€ / mesec</p>
+<a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Naruči</a>
+</div>
+</div>
+</section>
 
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <h2>Šta kažu naši korisnici</h2>
-    <div class="testimonials-container">
-      <div class="testimonial">
-        <p>„Najbrži streaming koji sam ikada imao. Preporuka svima!“</p>
-        <h4>- Aleksandar M.</h4>
-      </div>
-      <div class="testimonial">
-        <p>„Sve kanale gledam bez prekida. Vrlo profesionalno!“</p>
-        <h4>- Milica R.</h4>
-      </div>
-      <div class="testimonial">
-        <p>„Crveno-bela tema mi se baš dopada, a servis je top!“</p>
-        <h4>- Ivan T.</h4>
-      </div>
-    </div>
-  </section>
+<section class="testimonials">
+<h2>Šta kažu naši korisnici</h2>
+<div class="testimonials-container">
+<!-- 30 komentara -->
+<div class="testimonial"><p>„Najbrži streaming ikada!“</p><h4>- Aleksandar M.</h4></div>
+<div class="testimonial"><p>„Sve kanale gledam bez prekida.“</p><h4>- Milica R.</h4></div>
+<div class="testimonial"><p>„Pro paket je savršen.“</p><h4>- Ivan T.</h4></div>
+<div class="testimonial"><p>„Topla preporuka za sve korisnike.“</p><h4>- Jovana L.</h4></div>
+<div class="testimonial"><p>„Brza i pouzdana usluga.“</p><h4>- Marko S.</h4></div>
+<div class="testimonial"><p>„Jednostavno instaliranje i korišćenje.“</p><h4>- Ana K.</h4></div>
+<div class="testimonial"><p>„Stabilan streaming bez prekida.“</p><h4>- Luka P.</h4></div>
+<div class="testimonial"><p>„Veliki izbor kanala i filmova.“</p><h4>- Teodora V.</h4></div>
+<div class="testimonial"><p>„Aplikacija radi savršeno na TV-u.“</p><h4>- Nikola J.</h4></div>
+<div class="testimonial"><p>„Sve funkcionalnosti rade bez problema.“</p><h4>- Milena D.</h4></div>
+<div class="testimonial"><p>„Konačno stabilna IPTV usluga.“</p><h4>- Stefan B.</h4></div>
+<div class="testimonial"><p>„Vrlo jednostavno i intuitivno.“</p><h4>- Ivana P.</h4></div>
+<div class="testimonial"><p>„Uvek imam sve kanale koje želim.“</p><h4>- Nenad S.</h4></div>
+<div class="testimonial"><p>„Brza podrška preko WhatsApp-a.“</p><h4>- Katarina M.</h4></div>
+<div class="testimonial"><p>„Sjajan paket za filmove i serije.“</p><h4>- Vladimir L.</h4></div>
+<div class="testimonial"><p>„Radi perfektno na mobilnom.“</p><h4>- Marija K.</h4></div>
+<div class="testimonial"><p>„Preporučujem svima!“</p><h4>- Dragan N.</h4></div>
+<div class="testimonial"><p>„Kvalitet slike je odličan.“</p><h4>- Jelena T.</h4></div>
+<div class="testimonial"><p>„Pro paket je zaista vredi svake pare.“</p><h4>- Dejan V.</h4></div>
+<div class="testimonial"><p>„Uvek dostupno i bez prekida.“</p><h4>- Marina R.</h4></div>
+<div class="testimonial"><p>„Jednostavno aktiviranje i korišćenje.“</p><h4>- Petar S.</h4></div>
+<div class="testimonial"><p>„Sve radi besprekorno.“</p><h4>- Ivana L.</h4></div>
+<div class="testimonial"><p>„Najbolja IPTV usluga do sada.“</p><h4>- Milan P.</h4></div>
+<div class="testimonial"><p>„Odlična podrška 24/7.“</p><h4>- Anja M.</h4></div>
+<div class="testimonial"><p>„Sve preporuke za ovaj servis.“</p><h4>- Aleksandra K.</h4></div>
+<div class="testimonial"><p>„Jednostavan i pregledan interfejs.“</p><h4>- Nemanja J.</h4></div>
+<div class="testimonial"><p>„Puno kanala i filmova u jednom paketu.“</p><h4>- Milos D.</h4></div>
+<div class="testimonial"><p>„Vrlo stabilno i brzo.“</p><h4>- Kristina B.</h4></div>
+<div class="testimonial"><p>„Top iskustvo sa ovom aplikacijom.“</p><h4>- Bogdan S.</h4></div>
+<div class="testimonial"><p>„Sve funkcije rade perfektno, prezadovoljan sam!“</p><h4>- Tamara V.</h4></div>
+<div class="testimonial"><p>„Najbolji izbor kanala i filmova.“</p><h4>- Marko T.</h4></div>
+</div>
+</section>
 
-  <!-- Plaćanje -->
-  <section class="payment">
-    <h2>Plaćanje</h2>
-    <p>Možete platiti paket putem PayPal-a ili bankovnog računa:</p>
-    <ul>
-      <li>PayPal: <a href="https://www.paypal.me/maxviempaket" target="_blank">https://www.paypal.me/maxviempaket</a></li>
-      <li>IBAN: RS35123456789012345678 (MaxViem Paket)</li>
-    </ul>
-    <a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Poruči odmah</a>
-  </section>
+<footer>
+<p>&copy; 2025 MaxViem Paket. Sva prava zadržana.</p>
+<p><a href="privacy.html" style="color:#fff;">Politika privatnosti</a></p>
+</footer>
 
-  <!-- Kontakt -->
-  <section class="contact">
-    <h2>Kontaktirajte nas</h2>
-    <p>Za sva pitanja i narudžbine pišite nam na WhatsApp ili email:</p>
-    <p>📱 WhatsApp: <a href="https://wa.me/381694007480" target="_blank">+381 69 4007480</a></p>
-    <p>📧 Email: <a href="mailto:info@maxviempaket.com">info@maxviempaket.com</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 MaxViem Paket. Sva prava zadržana.</p>
-    <p><a href="privacy.html">Politika privatnosti</a></p>
-  </footer>
-
-  <!-- Particles init -->
-  <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('particles.js učitan');
-    });
-  </script>
+<script>
+function toggleMenu(){document.getElementById('menu').classList.toggle('show');}
+particlesJS.load('particles-js', 'particles.json', function(){console.log('particles.js učitan');});
+</script>
 </body>
 </html>
