@@ -1,61 +1,54 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naša aplikacija - MaxViem Paket</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.png" type="image/png">
-  <script src="particles.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naša aplikacija - MaxViem Paket</title>
+<link rel="stylesheet" href="style.css">
+<script src="particles.min.js"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <div class="logo">MaxViem Paket</div>
-      <ul>
-        <li><a href="index.html">Početna</a></li>
-        <li><a href="nasaaplikacija.html" class="active">Naša aplikacija</a></li>
-        <li><a href="privacy.html">Privatnost</a></li>
-        <li><a href="https://wa.me/381694007480" target="_blank" class="whatsapp-btn">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+<nav>
+  <div class="logo">MaxViem Paket</div>
+  <div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+  <ul id="menu">
+    <li><a href="index.html">Početna</a></li>
+    <li><a href="nasaaplikacija.html" class="active">Naša aplikacija</a></li>
+    <li><a href="top50.html">Top 50</a></li>
+    <li><a href="privacy.html">Privatnost</a></li>
+    <li><a href="https://wa.me/381694007480" target="_blank">Kontakt</a></li>
+  </ul>
+</nav>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero small">
-    <div id="particles-js"></div>
-    <div class="hero-content">
-      <h1>Naša IPTV aplikacija</h1>
-      <p>Gledajte vaše omiljene kanale gde god da ste – jednostavno i pouzdano.</p>
-    </div>
-  </section>
+<section class="hero small">
+<div id="particles-js"></div>
+<div class="hero-content">
+<h1>Naša IPTV aplikacija</h1>
+<p>Gledajte vaše omiljene kanale gde god da ste – jednostavno i pouzdano.</p>
+<a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Preuzmi aplikaciju</a>
+</div>
+</section>
 
-  <!-- App Info -->
-  <section class="app-info">
-    <h2>Zašto koristiti MaxViem aplikaciju?</h2>
-    <ul>
-      <li>✅ Jednostavna instalacija i podešavanje</li>
-      <li>✅ Radi na svim uređajima (TV, mobilni, tablet, PC)</li>
-      <li>✅ Brz i stabilan streaming bez prekida</li>
-      <li>✅ Podrška 24/7 putem WhatsApp-a</li>
-    </ul>
-    <div class="cta-center">
-      <a href="https://wa.me/381694007480" target="_blank" class="cta-btn">Preuzmi aplikaciju</a>
-    </div>
-  </section>
+<section class="app-info">
+<h2>Zašto koristiti MaxViem aplikaciju?</h2>
+<ul>
+<li>✅ Jednostavna instalacija i podešavanje</li>
+<li>✅ Radi na svim uređajima (TV, mobilni, tablet, PC)</li>
+<li>✅ Brz i stabilan streaming bez prekida</li>
+<li>✅ Podrška 24/7 putem WhatsApp-a</li>
+</ul>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 MaxViem Paket. Sva prava zadržana.</p>
-    <p><a href="privacy.html">Politika privatnosti</a></p>
-  </footer>
+<footer>
+<p>&copy; 2025 MaxViem Paket. Sva prava zadržana.</p>
+<p><a href="privacy.html" style="color:#fff;">Politika privatnosti</a></p>
+</footer>
 
-  <!-- Particles init -->
-  <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('particles.js učitan');
-    });
-  </script>
+<script>
+function toggleMenu(){document.getElementById('menu').classList.toggle('show');}
+particlesJS.load('particles-js', 'particles.json', function(){console.log('particles.js učitan');});
+</script>
 </body>
 </html>
